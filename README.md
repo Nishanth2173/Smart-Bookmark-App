@@ -41,8 +41,8 @@ This application allow users to authenticate using Google OAuth and manage their
     - Now our database is ready with realtime data updation with google OAuth only.
 ## Environment Variables
   Create a .env.local file:
-  NEXT_PUBLIC_SUPABASE_URL=your_project_url
-  NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+  - NEXT_PUBLIC_SUPABASE_URL=your_project_url
+  - NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
   - You can find your project url in settings and under Data API.
   - You can find anon key url in project settings API keys and go to legacy you can find it there.
   - Copy and paste all these keys in the env.locall file which will be used in our project.
