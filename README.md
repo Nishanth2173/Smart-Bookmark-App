@@ -20,34 +20,34 @@ This application allow users to authenticate using Google OAuth and manage their
 
 # Project Setup
   ## 🗄️Supabase Database
-   https://supabase.com/
-     - First signup and create organization.
-     - Now create a new project in supabase and choose region as mumbai
-     - After creating project go to the sidebar and select SQL editior and create table named as bookmarks or anything you like.
-     - Create 'bookmarks' table with columns:
-       - id (uuid, primary key, gen_random_uuid())
-       - title (text)
-       - url (text)
-       - user_id (uuid)
-       - created_at (timestamptz, default now())
-     - After that go to the Table editior and you will see the tables that you had created. Then click on the three dot's.
-     - There we will find policies click it and add policies as below,
-       - SELECT: auth.uid() = user_id
-       - INSERT: auth.uid() = user_id
-       - DELETE: auth.uid() = user_id
-     - And also important thing **enable Realtime**, you will see this option in the table editior. With the help of this only we can use the database with realtime data updation.
-     - Enable Google OAuth in authentication settings.
-       - For this we need to go for the google cloud to get clientid and secret key. You can find this process in google.
-     - Now our database is ready with realtime data updation with google OAuth only.
-  ## Environment Variables
-   Create a .env.local file:
-    NEXT_PUBLIC_SUPABASE_URL=your_project_url
-    NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
-    - You can find your project url in settings and under Data API.
-    - You can find anon key url in project settings API keys and go to legacy you can find it there.
-    - Copy and paste all these keys in the env.locall file which will be used in our project.
-
- # Challenges Faced and Solutions
+  https://supabase.com/
+  - First signup and create organization.
+  - Now create a new project in supabase and choose region as mumbai
+  - After creating project go to the sidebar and select SQL editior and create table named as bookmarks or anything you like.
+  - Create 'bookmarks' table with columns:
+    - id (uuid, primary key, gen_random_uuid())
+    - title (text)
+    - url (text)
+    - user_id (uuid)
+    - created_at (timestamptz, default now())
+ - After that go to the Table editior and you will see the tables that you had created. Then click on the three dot's.
+ - There we will find policies click it and add policies as below,
+    - SELECT: auth.uid() = user_id
+    - INSERT: auth.uid() = user_id
+    - DELETE: auth.uid() = user_id
+ - And also important thing **enable Realtime**, you will see this option in the table editior. With the help of this only we can use the database with realtime data updation.
+    - Enable Google OAuth in authentication settings.
+    - For this we need to go for the google cloud to get clientid and secret key. You can find this process in google.
+    - Now our database is ready with realtime data updation with google OAuth only.
+## Environment Variables
+  Create a .env.local file:
+  NEXT_PUBLIC_SUPABASE_URL=your_project_url
+  NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
+  - You can find your project url in settings and under Data API.
+  - You can find anon key url in project settings API keys and go to legacy you can find it there.
+  - Copy and paste all these keys in the env.locall file which will be used in our project.
+    
+# Challenges Faced and Solutions
    - While setup the database I faced the issues like enabling realtime, and finding api keys and client keys creation used in Google OAuth.
       - solution: With the help of google and Ai tools I had solved the issue.
    - Delete not syncing
