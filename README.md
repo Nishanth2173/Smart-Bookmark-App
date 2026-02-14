@@ -18,6 +18,38 @@ This application allow users to authenticate using Google OAuth and manage their
   - 🔄Cross-tabs logout synchronization
   - 👤User profile display (name, email and avatar pic of the mail id) **Opitonial created**
 
+# Project Folder
+
+├── 📁 public
+│   ├── 🖼️ file.svg
+│   ├── 🖼️ globe.svg
+│   ├── 🖼️ next.svg
+│   ├── 🖼️ vercel.svg
+│   └── 🖼️ window.svg
+├── 📁 src
+│   ├── 📁 app
+│   │   ├── 📁 dashboard
+│   │   │   └── 📄 page.js
+│   │   ├── 📄 favicon.ico
+│   │   ├── 🎨 globals.css
+│   │   ├── 📄 layout.js
+│   │   └── 📄 page.js
+│   ├── 📁 components
+│   │   ├── 📄 AuthButton.js
+│   │   ├── 📄 BookmarkForm.js
+│   │   ├── 📄 BookmarkItem.js
+│   │   └── 📄 BookmarkList.js
+│   └── 📁 lib
+│       └── 📄 supabaseClient.js
+├── ⚙️ .gitignore
+├── 📝 README.md
+├── 📄 eslint.config.mjs
+├── ⚙️ jsconfig.json
+├── 📄 next.config.mjs
+├── ⚙️ package-lock.json
+├── ⚙️ package.json
+└── 📄 postcss.config.mjs
+
 # Project Setup
   ## 🗄️Supabase Database
   https://supabase.com/
