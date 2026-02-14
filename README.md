@@ -19,6 +19,7 @@ This application allow users to authenticate using Google OAuth and manage their
   - 👤User profile display (name, email and avatar pic of the mail id) **Opitonial created**
 
 # Project Folder
+```
 ├── 📁 public
 |  ├── 🖼️ file.svg
 |  ├── 🖼️ globe.svg
@@ -48,6 +49,7 @@ This application allow users to authenticate using Google OAuth and manage their
 ├── ⚙️ package-lock.json
 ├── ⚙️ package.json
 └── 📄 postcss.config.mjs
+```
 # Project Setup
   ## 🗄️Supabase Database
   https://supabase.com/
