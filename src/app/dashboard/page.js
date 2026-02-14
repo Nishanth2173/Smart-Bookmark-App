@@ -42,6 +42,7 @@ export default function Dashboard() {
     };
 
     checkSession();
+
     const { data: listener } = supabase.auth.onAuthStateChange(
       (event, session) => {
         if (!session) {
@@ -59,6 +60,7 @@ export default function Dashboard() {
     await supabase.auth.signOut();
     router.replace("/");
   };
+
   if (!mounted) return null;
 
   if (loading) {
@@ -70,9 +72,8 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="w-full max-w-5xl mx-6 md:mx-auto bg-slate-900/90 p-10 rounded-2xl shadow-2xl border border-slate-700 text-white mt-12">
-      <div className="flex justify-between items-center mb-8">
-
+    <div className="w-full max-w-5xl mx-auto px-4 sm:px-6 md:px-10 bg-slate-900/90 p-6 sm:p-8 md:p-10 rounded-2xl shadow-2xl border border-slate-700 text-white mt-8 sm:mt-12">
+      <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4 mb-8">
         <div className="flex items-center gap-4">
           {user?.user_metadata?.avatar_url ? (
             <Image
@@ -88,18 +89,20 @@ export default function Dashboard() {
             </div>
           )}
 
-          <div>
-            <h1 className="text-xl font-semibold">
+          <div className="min-w-0">
+            <h1 className="text-lg sm:text-xl font-semibold truncate">
               Welcome, {user?.user_metadata?.full_name}
             </h1>
-            <p className="text-sm text-gray-400">
+            <p className="text-sm text-gray-400 truncate">
               {user?.email}
             </p>
           </div>
         </div>
+
         <button
           onClick={handleLogout}
-          className="px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition">
+          className="w-full sm:w-auto px-4 py-2 bg-red-500 rounded-lg hover:bg-red-600 transition"
+        >
           Logout
         </button>
       </div>
