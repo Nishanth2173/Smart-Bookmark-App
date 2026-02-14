@@ -49,7 +49,6 @@ This application allow users to authenticate using Google OAuth and manage their
 ├── ⚙️ package-lock.json
 ├── ⚙️ package.json
 └── 📄 postcss.config.mjs
-
 # Project Setup
   ## 🗄️Supabase Database
   https://supabase.com/
