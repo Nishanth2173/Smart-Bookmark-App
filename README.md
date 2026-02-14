@@ -2,6 +2,9 @@
 A full-stack real time smart bookmark manager built with **Next.js (App Router)**, **Supabase**, **Tailwind css**.
 This application allow users to authenticate using Google OAuth and manage their personal bookmarks with real-time cross-tabs syncronzation.
 
+## 🔗Deployment Link: 
+  Smart Bookmark App - https://smart-bookmark-app-six-rust.vercel.app/
+    
 ## 🚀Tech Stack
   - **Node.js 16.1.6 (App Router)**
   - **Supabase**
@@ -71,7 +74,7 @@ This application allow users to authenticate using Google OAuth and manage their
     - Enable Google OAuth in authentication settings.
     - For this we need to go for the google cloud to get clientid and secret key. You can find this process in google.
     - Now our database is ready with realtime data updation with google OAuth only.
-## Environment Variables
+## 🛠️Environment Variables
   Create a .env.local file:
   - NEXT_PUBLIC_SUPABASE_URL=your_project_url
   - NEXT_PUBLIC_SUPABASE_ANON_KEY=your_anon_key
@@ -87,5 +90,8 @@ This application allow users to authenticate using Google OAuth and manage their
    - Web Socket closed/timeout
       - Solution: Solved by creating singleton Supabase client.
    - Hydration Error
-      - Solution: Need to remove the extensions in the browser, then only the issue will be resolved. 
+      - Solution: Need to remove the extensions in the browser, then only the issue will be resolved.
+    
+# Deployment 
+  - For deployment as mentioned I had used **Vercel**.
 
